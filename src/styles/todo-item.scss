@@ -1,0 +1,43 @@
+.todo-item {
+	display: flex;
+	width: 100%;
+	min-height: 50px;
+	height: max-content;
+	background: var(--todo-background);
+	border-bottom: 1px solid hsl(234, 11%, 52%);
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	gap: 20px;
+	text-align: justify;
+
+	&:hover>&__del-btn {
+		opacity: 1;
+	}
+
+	&:hover>&__text {
+		color: hsl(236, 33%, 92%);
+	}
+
+	&__text {
+		font-size: 16px;
+		color: hsl(234, 39%, 85%);
+		flex: 1;
+		padding: 2px 0 0 0;
+	}
+
+	&__del-btn {
+		opacity: 0;
+		height: max-content;
+		margin-top: auto;
+		margin-bottom: auto;
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		padding: 3px 0 0 0;
+		box-sizing: border-box;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.checkbox {
+	display: none;
+
+	&+label {
+		display: block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		outline: 1px solid hsl(234, 11%, 52%);
+		margin-top: auto;
+		margin-bottom: auto;
+		position: relative;
+		cursor: pointer;
+
+		&:hover {
+			background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+			background-position: 0, 0, 0, 100%;
+			background-repeat: no-repeat;
+			background-size: 0 1px;
+			border-top: 1px solid hsl(192, 100%, 67%);
+			border-left: 1px solid hsl(192, 100%, 67%);
+			border-right: 1px solid hsl(280, 87%, 65%);
+			border-bottom: 1px solid hsl(280, 87%, 65%);
+			outline: none;
+			box-sizing: border-box;
+		}
+	}
+
+	&:checked+label {
+		background: center no-repeat url(./assets/icon-check.svg),
+			var(--gradient);
+		outline: none;
+		padding: 3px 0 0 0;
+		box-sizing: border-box;
+	}
+
+	&:checked~.todo-item__text {
+		text-decoration: line-through;
+		color: hsl(234, 11%, 52%);
+	}
+}
