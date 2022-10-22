@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/list-solid.svg" type="image/x-icon">
+	<title>Todo App</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 class="header__title">Todo</h1>
+			<button class="header__theme-btn" type="button">
+				<img src="./assets/icon-sun.svg" alt="Sun">
+			</button>
+		</header>
+		<main class="main">
+			<label class="todo-input">
+				<button class="todo-input__add-btn" id="todo-input__add-btn"></button>
+				<label for="todo-input__add-btn"></label>
+				<input class="todo-input__text" type="text" placeholder="Create a new todo...">
+			</label>
+			<!-- <div class="main__todo-list">
+				<div class="todo-item">
+					<input class="todo-item__checkbox checkbox" id="todo-item__checkbox_1" type="checkbox" checked>
+					<label for="todo-item__checkbox_1"></label>
+					<p class="todo-item__text">Complete online JavaScript course</p>
+					<button class="todo-item__del-btn" type="button">
+						<img src="./assets/icon-cross.svg" alt="Delete">
+					</button>
+				</div>
+				<div class="todo-item">
+					<input class="todo-item__checkbox checkbox" id="todo-item__checkbox_2" type="checkbox">
+					<label for="todo-item__checkbox_2"></label>
+					<p class="todo-item__text">Jog around the park 3x</p>
+					<button class="todo-item__del-btn" type="button">
+						<img src="./assets/icon-cross.svg" alt="Delete">
+					</button>
+				</div>
+				<div class="todo-item">
+					<input class="todo-item__checkbox checkbox" id="todo-item__checkbox_3" type="checkbox">
+					<label for="todo-item__checkbox_3"></label>
+					<p class="todo-item__text">10 minutes meditation</p>
+					<button class="todo-item__del-btn" type="button">
+						<img src="./assets/icon-cross.svg" alt="Delete">
+					</button>
+				</div>
+				<div class="todo-item">
+					<input class="todo-item__checkbox checkbox" id="todo-item__checkbox_4" type="checkbox">
+					<label for="todo-item__checkbox_4"></label>
+					<p class="todo-item__text">Read for 1 hour</p>
+					<button class="todo-item__del-btn" type="button">
+						<img src="./assets/icon-cross.svg" alt="Delete">
+					</button>
+				</div>
+				<div class="todo-item">
+					<input class="todo-item__checkbox checkbox" id="todo-item__checkbox_5" type="checkbox">
+					<label for="todo-item__checkbox_5"></label>
+					<p class="todo-item__text">Pick up groceries</p>
+					<button class="todo-item__del-btn" type="button">
+						<img src="./assets/icon-cross.svg" alt="Delete">
+					</button>
+				</div>
+				<div class="todo-item">
+					<input class="todo-item__checkbox checkbox" id="todo-item__checkbox_6" type="checkbox">
+					<label for="todo-item__checkbox_6"></label>
+					<p class="todo-item__text">
+						Complete Todo App on Frontend Mentor
+					</p>
+					<button class="todo-item__del-btn" type="button">
+						<img src="./assets/icon-cross.svg" alt="Delete">
+					</button>
+				</div>
+			</div> -->
+			<footer class="main__footer">
+				<span class="main__item-counter">3 items left</span>
+				<nav class="main__nav">
+					<ul>
+						<li><a class="main__link main__link_active" href="#">All</a></li>
+						<li><a class="main__link" href="#">Active</a></li>
+						<li><a class="main__link" href="#">Completed</a></li>
+					</ul>
+				</nav>
+				<button class="main__clear-btn" type="button">Clear Completed</button>
+			</footer>
+		</main>
+		<footer class="footer">
+			<span>Drag and drop to reorder list</span>
+		</footer>
+	</div>
+</body>
+
+</html>
