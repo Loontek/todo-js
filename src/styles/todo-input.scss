@@ -9,12 +9,18 @@
 	box-sizing: border-box;
 	gap: 20px;
 	box-shadow: 0 0 20px hsl(240, 20%, 8%);
+	margin-bottom: 20px;
+
+	@media all and (max-width:650px) {
+		border-radius: 5px;
+	}
 
 	&__add-btn {
 		display: none;
 
 		&+label {
 			display: block;
+			min-width: 20px;
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;

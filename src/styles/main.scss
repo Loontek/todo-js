@@ -1,32 +1,81 @@
 .main {
 	width: 100%;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
+	// gap: 20px;
+
+	@media all and (max-width:650px) {
+		border-radius: 10px;
+	}
 
 	&__todo-list {
-		margin-top: 20px;
+		// margin-top: 20px;
+		width: 100%;
 		box-shadow: 0 10px 30px 10px hsl(240, 20%, 8%);
+
+		@media all and (max-width:650px) {
+			border-radius: 5px 5px 0 0;
+		}
 	}
 
 	&__footer {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 20px;
 		padding: 0 20px;
+		box-sizing: border-box;
 		background: var(--todo-background);
 		height: 40px;
 		box-shadow: 0 30px 30px 10px hsl(240, 20%, 8%);
+
+		@media all and (max-width:650px) {
+			border-radius: 0 0 5px 5px;
+		}
 	}
 
 	&__nav {
-		width: 30%;
+		width: max-content;
+
+		@media all and (max-width:650px) {
+			display: none;
+		}
 
 		ul {
 			margin: 0;
 			padding: 0;
 			display: flex;
+			gap: 10px;
+			align-items: center;
 			list-style: none;
 			width: 100%;
+			justify-content: space-between;
+		}
+	}
+
+	&__mobile-nav {
+		width: 100%;
+		display: none;
+		justify-content: center;
+		margin-top: 20px;
+		background: var(--todo-background);
+		height: 50px;
+		border-radius: 5px;
+
+		@media all and (max-width:650px) {
+			display: flex;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			list-style: none;
+			width: max-content;
 			justify-content: space-between;
 		}
 	}
@@ -35,6 +84,10 @@
 		display: block;
 		font-size: 12px;
 		color: hsl(234, 11%, 52%);
+
+		// @media all and (max-width:650px) {
+		// 	font-size: 14px;
+		// }
 	}
 
 	&__link {
@@ -51,12 +104,30 @@
 		}
 	}
 
+	&__mobile-link {
+		color: hsl(234, 11%, 52%);
+		text-decoration: none;
+		font-size: 16px;
+
+		&_active {
+			color: hsl(220, 98%, 61%);
+		}
+
+		&:hover {
+			color: hsl(234, 39%, 85%);
+		}
+	}
+
 	&__clear-btn {
 		background: transparent;
 		color: hsl(234, 11%, 52%);
 		cursor: pointer;
 		border: none;
 		font-size: 12px;
+
+		// @media all and (max-width:650px) {
+		// 	font-size: 14px;
+		// }
 
 		&:focus {
 			outline: none;

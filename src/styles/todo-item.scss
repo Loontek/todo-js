@@ -10,6 +10,13 @@
 	gap: 20px;
 	text-align: justify;
 
+	&:first-child {
+
+		@media all and (max-width:650px) {
+			border-radius: 5px 5px 0 0;
+		}
+	}
+
 	&:hover>&__del-btn {
 		opacity: 1;
 	}
@@ -23,6 +30,10 @@
 		color: hsl(234, 39%, 85%);
 		flex: 1;
 		padding: 2px 0 0 0;
+
+		@media all and (max-width:650px) {
+			font-size: 14px;
+		}
 	}
 
 	&__del-btn {
@@ -35,6 +46,10 @@
 		border: none;
 		padding: 3px 0 0 0;
 		box-sizing: border-box;
+
+		@media all and (max-width:650px) {
+			opacity: 1;
+		}
 
 		&:focus {
 			outline: none;

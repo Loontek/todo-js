@@ -31,4 +31,8 @@ body {
 	align-items: center;
 	flex-direction: column;
 	gap: 40px;
+
+	@media all and (max-width:1000px) {
+		width: 60%;
+	}
 }
