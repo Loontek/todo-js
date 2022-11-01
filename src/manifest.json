@@ -1,0 +1,15 @@
+{
+    "lang": "ru",
+    "dir": "ltr",
+    "name": "Todo",
+    "description": "Todo app for your tasks",
+    "short_name": "Todo",
+	"icons": [{
+		"src":"./assets/list-solid.svg",
+		"sizes":"64x64"
+	}],
+    "start_url": "./index.html",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "background_color": "white"
+}
