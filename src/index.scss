@@ -10,29 +10,74 @@
 
 html,
 body {
-	height: 100%;
+	min-height: 100vh;
+	height: max-content;
 }
 
-body {
+.body {
+	padding: 10vw 0 50px 0;
+	box-sizing: border-box;
 	font-family: 'Josefin Sans';
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	background:
-		top no-repeat url(./assets/bg-desktop-dark.jpg),
-		var(--main-backgorund);
+
+	@media all and (max-width:650px) {
+		padding: 30vw 0 50px 0;
+	}
+
+	&_dark{
+		background: 
+			top / contain no-repeat url(./assets/bg-desktop-dark.jpg),
+			var(--main-background);
+
+		@media all and (max-width:650px) {
+			background: 
+				top / contain no-repeat url(./assets/bg-mobile-dark.jpg),
+				var(--main-background);
+		}
+	}
+
+	&_light {
+		background: 
+			top / contain no-repeat url(./assets/bg-desktop-light.jpg),
+			var(--main-background);
+			
+		@media all and (max-width:650px) {
+			background: 
+				top / contain no-repeat url(./assets/bg-mobile-light.jpg),
+				var(--main-background);
+		}
+	}
 }
 
 .container {
-	width: 40%;
+	width: 50%;
+	max-width: 600px;
+	min-width: 230px;
 	height: max-content;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	gap: 40px;
+	gap: 30px;
 
 	@media all and (max-width:1000px) {
 		width: 60%;
+	}
+}
+
+.apear {
+	animation: apear .5s;
+}
+
+.disapear {
+	animation: disapear .5s;
+}
+
+@keyframes apear {
+	0% {
+		transform: translateY(-50px);
+	}
+	
+	100% {
+		transform: translateY(0);
 	}
 }

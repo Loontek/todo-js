@@ -6,7 +6,7 @@
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		outline: 1px solid hsl(234, 11%, 52%);
+		outline: 1px solid var(--outline);
 		margin-top: auto;
 		margin-bottom: auto;
 		position: relative;
@@ -36,6 +36,6 @@
 
 	&:checked~.todo-item__text {
 		text-decoration: line-through;
-		color: hsl(234, 11%, 52%);
+		color: var(--second-text);
 	}
 }

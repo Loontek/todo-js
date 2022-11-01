@@ -3,20 +3,22 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	// gap: 20px;
+	box-shadow: 0 0px 20px var(--shadow);
+	border-radius: 5px;
+	overflow: hidden;
 
 	@media all and (max-width:650px) {
 		border-radius: 10px;
 	}
 
 	&__todo-list {
-		// margin-top: 20px;
 		width: 100%;
-		box-shadow: 0 10px 30px 10px hsl(240, 20%, 8%);
-
-		@media all and (max-width:650px) {
-			border-radius: 5px 5px 0 0;
-		}
+		height: auto;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		transition: max-height .5s;
 	}
 
 	&__footer {
@@ -29,11 +31,6 @@
 		box-sizing: border-box;
 		background: var(--todo-background);
 		height: 40px;
-		box-shadow: 0 30px 30px 10px hsl(240, 20%, 8%);
-
-		@media all and (max-width:650px) {
-			border-radius: 0 0 5px 5px;
-		}
 	}
 
 	&__nav {
@@ -61,6 +58,8 @@
 		justify-content: center;
 		margin-top: 20px;
 		background: var(--todo-background);
+		box-shadow: 0 0px 20px var(--shadow);
+		border-radius: 0 0 5px 5px;
 		height: 50px;
 		border-radius: 5px;
 
@@ -83,58 +82,52 @@
 	&__item-counter {
 		display: block;
 		font-size: 12px;
-		color: hsl(234, 11%, 52%);
-
-		// @media all and (max-width:650px) {
-		// 	font-size: 14px;
-		// }
+		color: var(--footer-text);
 	}
 
 	&__link {
-		color: hsl(234, 11%, 52%);
+		color: var(--footer-text);
 		text-decoration: none;
 		font-size: 12px;
-
+		font-weight: 700;
+		
 		&_active {
-			color: hsl(220, 98%, 61%);
+			color: var(--active-link);
 		}
-
+		
 		&:hover {
-			color: hsl(234, 39%, 85%);
+			color: var(--main-text);
 		}
 	}
-
+	
 	&__mobile-link {
-		color: hsl(234, 11%, 52%);
+		color: var(--footer-text);
 		text-decoration: none;
 		font-size: 16px;
+		font-weight: 700;
 
 		&_active {
-			color: hsl(220, 98%, 61%);
+			color: var(--active-link);
 		}
 
 		&:hover {
-			color: hsl(234, 39%, 85%);
+			color: var(--main-text);
 		}
 	}
 
 	&__clear-btn {
 		background: transparent;
-		color: hsl(234, 11%, 52%);
+		color: var(--footer-text);
 		cursor: pointer;
 		border: none;
 		font-size: 12px;
-
-		// @media all and (max-width:650px) {
-		// 	font-size: 14px;
-		// }
 
 		&:focus {
 			outline: none;
 		}
 
 		&:hover {
-			color: hsl(234, 39%, 85%);
+			color: var(--main-text);
 		}
 	}
 }

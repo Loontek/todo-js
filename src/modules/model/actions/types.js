@@ -1,0 +1,25 @@
+export const ACTIVATE_DELETE_BTN = "ACTIVATE_DELETE_BTN";
+
+export const ADD_TO_COMPLETED = "ADD_TO_COMPLETED";
+
+export const ADD_TODO = "ADD_TODO";
+
+export const CLEAR_COMPLETED = "CLEAR_COMPLETED";
+
+export const DELETE_TODO = "DELETE_TODO";
+
+export const INIT_APPLICATION = "INIT_APPLICATION";
+
+export const SET_INPUT_VALUE = "SET_INPUT_VALUE";
+
+export const SET_THEME = "SET_THEME";
+
+export const SHOW_TODO = "SHOW_TODO";
+
+export const SORT_TODOS = "SORT_TODOS";
+
+export const STOP_ACTION = "STOP_ACTION";
+
+export const SWITCH_CATEGORY = "SWITCH_CATEGORY";
+
+export const TOGGLE_COMPLETE_BTN = "TOGGLE_COMPLETE_BTN";

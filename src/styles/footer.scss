@@ -6,7 +6,7 @@
 	span {
 		display: block;
 		font-size: 12px;
-		color: hsl(234, 11%, 52%);
+		color: var(--footer-text);
 
 		@media all and (max-width:650px) {
 			font-size: 14px;
